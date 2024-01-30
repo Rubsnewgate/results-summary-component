@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 100vh;
+  box-shadow: initial;
+}
+
+.score-section {
+  border-radius: 0 0 20px 20px;
+}
+
+.score__info {
+  justify-content: center;
+}
+
+.summary__btn {
+  margin-top: 40px;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=mobile.css.map */

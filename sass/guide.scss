@@ -1,28 +1,32 @@
-// Primary colors
+// Primary Colors
 $light-red: hsla(0, 100%, 67%, 0.1);
 $orangey: hsla(39, 100%, 56%, 0.1);
 $teal-green: hsla(166, 100%, 37%, 0.1);
 $cobalt-blue: hsla(234, 85%, 45%, 0.1);
 
-// Gradients
+// Gradients Colors
 $light-slate-blue: hsl(252, 100%, 67%);
 $light-royal-blue: hsl(241, 81%, 54%);
 $violet-blue: hsla(256, 72%, 46%, 1);
 $persian-blue: hsla(241, 72%, 46%, 0);
 
-// Neutral
+// Neutral Colors
 $white: hsl(0, 0%, 100%);
 $pale-blue: hsl(221, 100%, 96%);
 $light-lavender: hsl(241, 100%, 89%);
 $dark-gray-blue: hsl(224, 30%, 27%);
 
-// Font
+// Typography
 $primary-font: 'Hanken Grotesk', sans-serif;
 
-// Font sizes
-$sm-size: 1.8rem;
+// Font Sizes
+$xlg-size: 4rem;
+$lg-size: 2.2rem;
+$md-size: 1.8rem;
+$sm-size: 1.5rem;
+$xsm-size: 1.2rem;
 
-// Global resets
+// Global Resets
 * {
 	box-sizing: border-box;
 }
@@ -30,15 +34,18 @@ html {
 	font-size: 62.5%;
 }
 body {
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 100vh;
 	margin: 0;
-	font-family: $primary-font;
 }
 
-// flexbox
-@mixin flexCenter($direction, $content: null, $align: null, $gap: null) {
+// Flexbox Factory
+@mixin flexbox($direction:null, $justify: null, $align: null, $gap: null) {
 	display: flex;
 	flex-direction: $direction;
-	justify-content: $content;
+	justify-content: $justify;
 	align-items: $align	;
 	gap: $gap;
 }
