@@ -4,82 +4,86 @@
 .main-wrapper {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	width: 480px;
-	height: 340px;
+	width: 620px;
+	height: 420px;
 	font-family: $primary-font;
 	border-radius: 20px;
 	box-shadow: 4px 4px 20px rgba(0,0,0,0.1);
 }
 
 // Result Section
-.score-section {
-	padding: 10px 35px;
+.score {
+	padding: 35px;
 	text-align: center;
 	color: $white;
 	background-image: linear-gradient(to bottom, $light-slate-blue, $light-royal-blue);
 	border-radius: 20px;
 }
 .score__info {
-	@include flexbox(column, null, center, 20px);
+	@include flexbox(column, null, center, 25px);
 	height: 100%;
 }
 .score__title {
-	margin: 20px 0 0;
-	font-size: $sm-size;
+	margin: 0;
+	font-size: $md-size;
 	font-weight: bold;
 	color: $light-lavender;
 }
 .score__circle {
 	@include flexbox(column, center, center, null);
-	width: 120px;
-	height: 120px;
+	width: 150px;
+	height: 150px;
 	background-image: linear-gradient(to bottom, $violet-blue, $light-royal-blue, $persian-blue);
 	border-radius: 100%;
 }
 .circle--user-percentage {
-	font-size: $xlg-size;
+	font-size: $lg-size;
 	font-weight: bold;
 	margin: 0;
 }
 .circle__total-percentage {
 	margin: 0;
-	font-size: $xsm-size;
+	font-size: $sm-size;
 	color: $light-lavender;
 }
+.score__text {
+	@include flexbox(column, center, center)
+}
 .score__text-range {
-	font-size: $lg-size;
+	font-size: $md-size;
 	font-weight: bold;
 	margin: 0;
 }
 .score__text-lavender {
-	font-size: $xsm-size;
+	width: 85%;
+	font-size: $sm-size;
 	color: $light-lavender;
 }
 
 // Sumary Section
-.summary-section {
-	@include flexbox(column, null, null, 10px);
-	height: 100%;
-	padding: 10px 20px;
+.summary {
+	@include flexbox(column, space-between, null, 10px);
+	padding: 35px;
 }
 .summary__title {
 	font-size: $md-size;
 	font-weight: bold;
-	margin: 20px 0;
+	margin-top: 0;
 }
 .summary__item {
 	@include flexbox(row, null, center);
+	height: 40px;
 	padding: 6px 5px;
 	border-radius: 5px;
 	p {
 		padding-left: 5px;
 		margin: 0;
-		font-size: $xsm-size;
+		font-size: $sm-size;
 		font-weight: bold;
 	}
 	span {
 		margin-left: auto;
-		font-size: $xsm-size;
+		font-size: $sm-size;
 		color: $dark-gray-blue;
 	}
 }
@@ -108,6 +112,7 @@
 	}
 }
 .summary__btn {
+	height: 40px;
 	margin-top: 20px;
 	padding: 10px;
 	font-weight: bold;
@@ -118,7 +123,7 @@
 	&:hover {
 		cursor: pointer;
 	}
-}
-.btn--active:active {
-	background-image: linear-gradient(to bottom, $light-slate-blue, $light-royal-blue);
+	&:active {
+		background-image: linear-gradient(to bottom, $light-slate-blue, $light-royal-blue);
+	}
 }
