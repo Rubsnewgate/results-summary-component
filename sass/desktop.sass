@@ -1,0 +1,120 @@
+@use 'guide.sass'
+
+// Main container
+.main-wrapper
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	width: 620px
+	height: 420px
+	font-family: guide.$primary-font
+	border-radius: 20px
+	box-shadow: 4px 4px 20px rgba(0,0,0,0.1)
+
+// Result section
+.score
+	padding: 35px
+	text-align: center
+	color: guide.$white
+	background-image: linear-gradient(to bottom, guide.$light-slate-blue, guide.$light-royal-blue)
+	border-radius: 20px
+
+	&__info
+		@include guide.flexbox(column, null, center, 25px)
+		height: 100%
+
+	&__title
+		margin: 0
+		font-size: guide.$md-size
+		font-weight: bold
+		color: guide.$light-lavender
+
+	&__circle
+		@include guide.flexbox(column, center, center, null)
+		width: 150px
+		height: 150px
+		background-image: linear-gradient(to bottom, guide.$violet-blue, guide.$light-royal-blue, guide.$persian-blue)
+		border-radius: 100%
+
+.circle--user-percentage
+	font-size: guide.$lg-size
+	font-weight: bold
+	margin: 0
+
+.circle__total-percentage
+	margin: 0
+	font-size: guide.$sm-size
+	color: guide.$light-lavender
+
+.score__text
+	@include guide.flexbox(column, center, center)
+
+	&-range
+		font-size: guide.$md-size
+		font-weight: bold
+		margin: 0
+
+	&-lavender
+		width: 85%
+		font-size: guide.$sm-size
+		color: guide.$light-lavender
+
+// Sumary section
+.summary
+	@include guide.flexbox(column, space-between, null, 10px)
+	padding: 35px
+
+	&__title
+		font-size: guide.$md-size
+		font-weight: bold
+		margin-top: 0
+
+	&__item
+		@include guide.flexbox(row, null, center)
+		height: 40px
+		padding: 6px 5px
+		border-radius: 5px
+		p
+			padding-left: 5px
+			margin: 0
+			font-size: guide.$sm-size
+			font-weight: bold
+
+		span
+			margin-left: auto
+			font-size: guide.$sm-size
+			color: guide.$dark-gray-blue
+
+.red-item
+	background: guide.$light-red
+	p
+		color: hsl(0, 100%, 67%)
+
+.yellow-item
+	background: guide.$orangey
+	p
+		color: hsl(39, 100%, 56%,)
+
+.green-item
+	background: guide.$teal-green
+	p
+		color: hsl(166, 100%, 37%)
+
+.blue-item
+	background: guide.$cobalt-blue
+	p
+		color: hsl(234, 85%, 45%)
+
+.summary__btn
+	height: 40px
+	margin-top: 20px
+	padding: 10px
+	font-weight: bold
+	color: guide.$white
+	background-color: guide.$dark-gray-blue
+	border: none
+	border-radius: 20px
+	&:hover
+		cursor: pointer
+
+	&:active
+		background-image: linear-gradient(to bottom, guide.$light-slate-blue, guide.$light-royal-blue)
