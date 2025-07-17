@@ -1,6 +1,6 @@
 @use 'guide.sass'
 
-// Main container
+// Main
 .main-wrapper
 	display: grid
 	grid-template-columns: repeat(2, 1fr)
@@ -18,12 +18,11 @@
 	background-image: linear-gradient(to bottom, guide.$light-slate-blue, guide.$light-royal-blue)
 	border-radius: 20px
 
-	&__info
+	&-info
 		@include guide.flexbox(column, null, center, 25px)
 		height: 100%
 
 	&__title
-		margin: 0
 		font-size: guide.$md-size
 		font-weight: bold
 		color: guide.$light-lavender
@@ -38,10 +37,8 @@
 .circle--user-percentage
 	font-size: guide.$lg-size
 	font-weight: bold
-	margin: 0
 
 .circle__total-percentage
-	margin: 0
 	font-size: guide.$sm-size
 	color: guide.$light-lavender
 
@@ -51,14 +48,13 @@
 	&-range
 		font-size: guide.$md-size
 		font-weight: bold
-		margin: 0
 
 	&-lavender
 		width: 85%
 		font-size: guide.$sm-size
 		color: guide.$light-lavender
 
-// Sumary section
+// Summary section
 .summary
 	@include guide.flexbox(column, space-between, null, 10px)
 	padding: 35px
@@ -66,7 +62,6 @@
 	&__title
 		font-size: guide.$md-size
 		font-weight: bold
-		margin-top: 0
 
 	&__item
 		@include guide.flexbox(row, null, center)
@@ -75,7 +70,6 @@
 		border-radius: 5px
 		p
 			padding-left: 5px
-			margin: 0
 			font-size: guide.$sm-size
 			font-weight: bold
 

@@ -20,16 +20,16 @@ $dark-gray-blue: hsl(224, 30%, 27%)
 $primary-font: 'Hanken Grotesk', sans-serif
 
 // Font sizes
-$lg-size: 4rem
-$md-size: 2rem
-$sm-size: 1.5rem
+$lg-size: 2.5rem
+$md-size: 1.25rem
+$sm-size: 1rem
 
-// Global resets
-*
+// Resets
+*, *::before, *::after
 	box-sizing: border-box
 
-html
-	font-size: 62.5%
+*
+	margin: 0
 
 body
 	display: grid
@@ -38,10 +38,15 @@ body
 	min-height: 100vh
 	margin: 0
 
-// Flexbox factory
+// Layout
 @mixin flexbox($direction:null, $justify: null, $align: null, $gap: null)
 	display: flex
 	flex-direction: $direction
 	justify-content: $justify
 	align-items: $align
 	gap: $gap
+
+// Queries
+@media screen and (max-width: 33.75em)
+	body
+		padding: 20px 15px

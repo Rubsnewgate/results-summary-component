@@ -1,9 +1,9 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+* {
+  margin: 0;
 }
 
 body {
@@ -14,10 +14,11 @@ body {
   margin: 0;
 }
 
-body {
-  padding: 20px 15px;
+@media screen and (max-width: 33.75em) {
+  body {
+    padding: 20px 15px;
+  }
 }
-
 .main-wrapper {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -29,7 +30,7 @@ body {
 .score {
   border-radius: 20px;
 }
-.score__info {
+.score-info {
   justify-content: center;
 }
 

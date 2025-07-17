@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="description" content="Summary component results"/>
-	<title>Score results</title>
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com"/>
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Hanken+Grotesk:wght@300;400;600&family=IBM+Plex+Sans:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
-	<!-- Styles -->
-	<link rel="stylesheet" href="../styles/desktop.css"/>
-	<link rel="stylesheet" href="../styles/mobile.css" media="(min-width: 280px) and (max-width: 540px)"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Summary component results">
+	<title> Score results </title>
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Hanken+Grotesk:wght@300;400;600&family=IBM+Plex+Sans:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- styles -->
+	<link rel="stylesheet" href="../styles/desktop.css">
+	<link rel="stylesheet" href="../styles/mobile.css" media="(min-width: 280px) and (max-width: 540px)">
 </head>
 <body>
 	<main class="main-wrapper">
 		<section class="score">
-			<div class="score__info">
-				<h2 class="score__title">Your Result</h2>
+			<div class="score-info">
+				<h2 class="score__title"> Your Result </h2>
 
 				<div class="score__circle">
-					<span class="circle--user-percentage">76</span>
-					<span class="circle__total-percentage">of 100</span>
+					<span class="circle--user-percentage"> 76 </span>
+					<span class="circle__total-percentage"> of 100 </span>
 				</div>
 
 				<div class="score__text">
-					<span class="score__text-range">Great</span>
+					<span class="score__text-range"> Great </span>
 					<p class="score__text-lavender">
 						You scored higher than 65% of the people who have
 						taken these tests.
@@ -35,49 +35,35 @@
 		</section>
 
 		<section class="summary">
-			<h1 class="summary__title">Summary</h1>
+			<h1 class="summary__title"> Summary </h1>
 
 			<div class="summary__item red-item">
-				<object data="../assets/icon-reaction.svg"
-					type="image/svg+xml" aria-label="Alternative text"
-				>
-					<p>Your browser doesn't support svg.</p>
-				</object>
-				<p>Reaction</p>
+				<img src="../assets/icons/icon-reaction.svg" alt="Reaction icon">
+				<p> Reaction </p>
 				<span> <strong> 80 </strong> / 100</span>
 			</div>
 
 			<div class="summary__item yellow-item">
-				<object data="../assets/icon-memory.svg"
-					type="image/svg+xml" aria-label="Alternative text"
-				>
-					<p>Your browser doesn't support svg.</p>
-				</object>
-				<p>Memory</p>
+				<img src="../assets/icons/icon-memory.svg" alt="Memory icon">
+				<p> Memory </p>
 				<span> <strong> 92 </strong> / 100</span>
 			</div>
 
 			<div class="summary__item green-item">
-				<object data="../assets/icon-verbal.svg"
-					type="image/svg+xml" aria-label="Alternative text"
-				>
-					<p>Your browser doesn't support svg.</p>
-				</object>
+				<img src="../assets/icons/icon-verbal.svg" alt="Verbal icon">
 				<p>Verbal</p>
 				<span><strong> 61 </strong> / 100</span>
 			</div>
 
 			<div class="summary__item blue-item">
-				<object data="../assets/icon-visual.svg"
-					type="image/svg+xml" aria-label="Alternative text"
-				>
-					<p>Your browser doesn't support svg.</p>
-				</object>
-				<p>Visual</p>
+				<img src="../assets/icons/icon-visual.svg" alt="Visual icon">
+				<p> Visual </p>
 				<span> <strong> 72 </strong> / 100</span>
 			</div>
 
-			<button class="summary__btn btn--active"> Continue </button>
+			<button class="summary__btn btn--active" type="button">
+				Continue
+			</button>
 		</section>
 	</main>
 </body>
